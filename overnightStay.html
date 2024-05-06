@@ -31,11 +31,60 @@
         </div>
     </nav>
 
+    <section>
+
+        <h1>Estimate your staty!</h1>
+
+        <form id="estimateStayForm">
+            <div class="mb-3">
+                <label>Your name:</label>
+                <input type="text" name="fullName" id="fullName" required>
+            </div>
+            <div class="mb-3">
+                <label for="checkInDate">Check in Date:</label>
+                <input type="date" name="checkInDate" id="checkInDate" required>
+            </div>
+            <div class="mb-3">
+                <label for="numberofNights">Number of nights:</label>
+                <input type="number" name="numberofNights" id="numberofNights" required min="1" max="28">
+            </div>
+            <div class="mb-3">
+                <h3>Room Type:</h3>
+                <input type="radio" name="roomType" id="queen" value="queen" checked>
+                <label for="roomType">Queen</label>
+                <input type="radio" name="roomType" id="king" value="king">
+                <label for="roomType">King</label>
+                <input type="radio" name="roomType" id="2bedroomSuite" value="2bedroomSuite">
+                <label for="roomType">2-Bedroom Suite</label>
+            </div>
+            <div class="mb-3">
+                <label for="numberofAdults">Number of adults:</label>
+                <input type="number" name="numberofAdults" id="numberofAdults" value="1" required min="1" max="4">
+            </div>
+            <div class="mb-3">
+                <label for="numberofChildrem">Number of children:</label>
+                <input type="number" name="numberofChildrem" id="numberofChildrem" value="0" required min="0" max="4">
+            </div>
+            <div class="mb-3">
+                <h3>Discounts:</h3>
+                <input type="radio" name="discounts" id="none" checked>
+                <label for="none">None</label>
+                <input type="radio" name="discounts" id="aaa">
+                <label for="aaa">AAA/Senior (10%)</label>
+                <input type="radio" name="discounts" id="military">
+                <label for="military">Military (20%)</label>
+            </div>
+            <button class="btn btn-primary">Estimate My Stay</button>
+        </form>
+        <div id="results"></div>
+
+    </section>
+
     <!-- include the Bootstrap JS file -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <script src="scripts/overnightStay.js"></script>
+    <script src="scripts/overnightStay.js"></script>
 </body>
 
 </html>
