@@ -10,9 +10,9 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body>
+<body style="background-image: linear-gradient(180deg, #FC00FF, #00DBDE); background-attachment: fixed;">
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Vacation Resort</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -26,14 +26,17 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="overnightStay.html">Overnight Stay Estimator</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rentaCar.html">Rent a Car!</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section>
+    <section style="text-align: center; color: white; margin-top: 4rem;">
 
-        <h1>Estimate your staty!</h1>
+        <h1 class="display-3">Estimate your stay!</h1>
 
         <form id="estimateStayForm">
             <div class="mb-3">
@@ -49,7 +52,7 @@
                 <input type="number" name="numberofNights" id="numberofNights" required min="1" max="28">
             </div>
             <div class="mb-3">
-                <h3>Room Type:</h3>
+                <h3 class="display-5">Room Type:</h3>
                 <input type="radio" name="roomType" id="queen" value="queen" checked>
                 <label for="roomType">Queen</label>
                 <input type="radio" name="roomType" id="king" value="king">
@@ -66,7 +69,7 @@
                 <input type="number" name="numberofChildrem" id="numberofChildrem" value="0" required min="0" max="4">
             </div>
             <div class="mb-3">
-                <h3>Discounts:</h3>
+                <h3 class="display-6">Discounts:</h3>
                 <input type="radio" name="discounts" id="none" checked>
                 <label for="none">None</label>
                 <input type="radio" name="discounts" id="aaa">
